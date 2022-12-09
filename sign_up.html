@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kayıt</title>
+        <style>
+            *{
+                    
+                    padding-top: 2px; 
+                    padding-bottom: 2px; 
+                    padding-right: 0px;
+                    padding-left: 0px; 
+
+                    margin-top:10px;
+                    margin-bottom:10px; 
+                    margin-right: 45px; 
+                    margin-left: 45px; 
+                    box-sizing: border-box;
+            }
+            body{
+                    background-color:#003963;
+            }
+                
+            .row{
+                    background: white ;
+                    border-radius:30px ;
+                    
+            }
+            .col{
+                    border-radius:30px ;
+            }
+            img{
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+                
+            }
+            
+        </style>
+    </head>
+<body>
+    
+    <section class="form my-4 mx-5">
+            <div class="container">
+                <div class="row no-gutter">
+                    <div class="col-lg-5 pr-2">
+                        <h1 style="text-align:center">Kayıt Ol</h1>
+                        <form>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Ad</span>
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                            
+                                <span class="input-group-text" id="inputGroup-sizing-default">Soyad</span>
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                            </div>
+                            <div class="input-group mb-1">
+                                <label for="formGroupExampleInput" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1">
+                            </div>    
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">Şifre</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            
+                            
+                                <label for="formGroupExampleInput2" class="form-label">Telefon No</label>
+                                <input type="tel" class="form-control" id="exampleInputPhone">
+                            
+                            </div> 
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">Öğrenci</label>
+                            
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">Misafir</label>
+                                </div>
+                            
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">Öğrenci No</label>
+                                <input type="password" class="form-control" id="exampleInputOgrenciNo">
+                            </div>
+                            <div>
+                            <select class="form-select" aria-label="Disabled select example"  >
+                                <option selected>Fakülte seçiniz</option>
+                                <option value="1">Diş hekimliği </option>
+                                <option value="2">Eczacılık</option>
+                                <option value="3">Edebiyat</option>
+                                <option value="4">Fen</option>
+                                <option value="5">İktisadi ve İdari Bilimler</option>
+                                <option value="6">Mimarlık</option>
+                                <option value="7">Mühendislik</option>
+                                <option value="8">Of Teknoloji</option>
+                                <option value="9">Orman</option>
+                                <option value="10">Sağlık Bilimleri</option>
+                                <option value="11">Sürmene Deniz Bilimleri</option>
+                                <option value="12">Tıp</option>
+
+                            </select>
+                            </div>
+                            <div>
+                            <select class="form-select" aria-label="Disabled select example" >
+                                <option selected>Bölüm seçiniz</option>
+                                <option value="1">DİŞ HEKİMLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="2">ECZACILIK BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="3">ARKEOLOJİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="4">BATI DİLLERİ ve EDEBİYATI BÖLÜMÜ / İNGİLİZ DİLİ VE EDEBİYATI ( I. ÖĞRETİM)</option>
+                                <option value="5">RUS DİLİ ve EDEBİYATI BÖLÜMÜ / ( I. ÖĞRETİM) - %100 Rusça</option>
+                                <option value="6">SOSYOLOJİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="7">TARİH BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="8">TÜRK DİLİ ve EDEBİYATI BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="9">BİYOLOJİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="10">FİZİK BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="11">İSTATİSTİK ve BİLGİSAYAR BİLİMLERİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="12">KİMYA BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="13">MATEMATİK BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="14">MOLEKÜLER BİYOLOJİ ve GENETİK BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="15">ÇALIŞMA EKONOMİSİ ve ENDÜSTRİ İLİŞKİLERİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="16">EKONOMETRİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="17">İKTİSAT BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="18">İŞLETME BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="19">KAMU YÖNETİMİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="20">MALİYE BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="21">ULUSLARARASI İLİŞKİLER BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="22">YÖNETİM BİLİŞİM SİSTEMLERİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="23">İÇ MİMARLIK BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="24">MİMARLIK BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="25">ŞEHİR ve BÖLGE PLANLAMA BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="26">BİLGİSAYAR MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM) - %30 İngilizce</option>
+                                <option value="27">ELEKTRİK ve ELEKTRONİK MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="28">ENDÜSTRİ MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="29">HARİTA MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="30">İNŞAAT MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="31">JEOFİZİK MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="32">JEOLOJİ MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="33">MADEN MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM) - %30 İngilizce</option>
+                                <option value="34">MAKİNA MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM) - %30 İngilizce</option>
+                                <option value="35">METALURJİ ve MALZEME MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="36">YAZILIM MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="37">ELEKTRONİK ve HABERLEŞME MÜHENDİSLİĞİ BÖLÜMÜ</option> 
+                                <option value="38">ENERJİ SİSTEMLERİ MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="39">ORMAN ENDÜSTRİSİ MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="40">ORMAN MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="41">PEYZAJ MİMARLIĞI BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="42">YABAN HAYATI EKOLOJİSİ ve YÖNETİMİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="43">HEMŞİRELİK BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="44">SAĞLIK YÖNETİMİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="45">BALIKÇILIK TEKNOLOJİSİ MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="46">DENİZ ULAŞTIRMA İŞLETME MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="47">GEMİ İNŞAATI ve GEMİ MAKİNELERİ MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="48">GEMİ MAKİNELERİ İŞLETME MÜHENDİSLİĞİ BÖLÜMÜ / ( I. ÖĞRETİM)</option>
+                                <option value="49">GENEL TIP BÖLÜMÜ / ( I. ÖĞRETİM) - %30 İngilizce</option>
+                            </select>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-outline-primary">Kayıt Ol</button>
+                            </div>
+                        </form>
+                    </div>    
+                </div>        
+            </div>
+    </section>            
+
+</body>
+</html>
