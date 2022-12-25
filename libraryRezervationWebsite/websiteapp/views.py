@@ -1,7 +1,6 @@
 from django.http.response import HttpResponse
 from django.shortcuts import render
 
-
 from .models import AuthGroup, AuthGroupPermissions, AuthPermission, AuthUser, AuthUserGroups, AuthUserUserPermissions, DjangoAdminLog, DjangoContentType, DjangoMigrations, DjangoSession
 from .models import Kutuphane, Misafiruye, Ogrenciuye, Oneri, Rezervasyon, Siparis, Siparisurun, Urun  
 
@@ -25,6 +24,9 @@ def hall(request):
 def log_in(request):
     return render(request, "websiteapp/log_in.html")
 
+def sign_up(request):
+    return render(request, "websiteapp/sign_up.html")
+
 def profil_misafir(request):
     return render(request, "websiteapp/profil_misafir.html")
 
@@ -33,6 +35,9 @@ def profil_ogrenci(request):
 
 def rezervation(request):
     return render(request, "websiteapp/rezervation.html")
+
+def shopping(request):
+    return render(request, "websiteapp/shopping.html")
     
  
  

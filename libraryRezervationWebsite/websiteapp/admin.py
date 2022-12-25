@@ -2,9 +2,7 @@ from django.contrib import admin
 
 
 from .models import AuthGroup, AuthGroupPermissions, AuthPermission, AuthUser, AuthUserGroups, AuthUserUserPermissions, DjangoAdminLog, DjangoContentType, DjangoMigrations, DjangoSession
-from .models import Kutuphane, Misafiruye, Ogrenciuye, Oneri, Rezervasyon, Siparis, Siparisurun, Urun            
-# Register your models here.
-
+from .models import Kutuphane, Misafiruye, Ogrenciuye, Oneri, Rezervasyon, Siparis, Siparisurun, Urun  
 
 
 admin.site.register(Kutuphane)

@@ -1,4 +1,4 @@
-
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -67,6 +67,51 @@
         </style>
     </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item-takvim">
+                            <div>
+                                <a class="nav-link text-dark" href="{% url 'home' %}"><i class=" bi bi-calendar3"></i></a>
+                            </div>
+                            
+                        </li>
+                
+                    <h1 class="text-center" >Kütüphane Randevu Sistemi</h1>
+
+                    <li class="nav-item-kayıt">
+                        <div>
+                            
+                            <a class="nav-link text-dark" href="{% url 'sign_up' %}"><i class=" bi bi-person-plus"></i></a>
+                        </div>
+                      
+                    </li>
+                    
+                    <li class="nav-item-profil">
+                        <div  >
+                            <a class="nav-link text-dark" href="{% url 'log_in' %}"><i class=" bi bi-person-circle"></i></a>
+                        </div>
+                        
+                    </li>
+                   
+                       
+                    <li class="nav-item-alişveris">
+                    <div>
+                        <a class="nav-link text-dark" href="{% url 'shopping' %}"><i class=" bi bi-cart4"></i></a>
+                    </div>
+                    </li>
+                    <li class="nav-item-iletişim">
+                        <div>
+                            <a class="nav-link text-dark" href="{% url 'communication' %}"><i class=" bi bi-envelope"></i></a>
+                        </div>
+                    </li>
+                </ul>    
+            </div>
+        </div>    
+    </nav>
     
     
             <div class="container">

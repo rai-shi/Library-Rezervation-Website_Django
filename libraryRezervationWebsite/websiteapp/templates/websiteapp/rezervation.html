@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -41,44 +43,52 @@
   </head>
   <body>
         
-        <div class="row align-content-center "style= "height:800px; width:400px; solid #333;">
+    <div class="row align-content-center "style= "height:800px; width:400px; solid #333;">
           
         
         
-            <div class="col-12 "style="text-align: center" >
-              <font size="6" color="black">AD SOYAD</font>
-            </div>
-            <br><br>
-            <br><br>
-            <br><br>
-            <br><br>
+      <div class="col-12 "style="text-align: center" >
+        <font size="6" color="black">AD SOYAD</font>
+      </div>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
 
-            <div class="col-12" style="text-align: center">
-              <a href="profil_ogrenci.html" href="profil_misafir.html">Profil Bilgileri</a>
-            </div>
-            <div class="col-12" style="text-align: center">
-              <a hre="rezervation.html">Rezervasyonlarım</a>
-            </div>
-            <div class="col-12 "style="text-align: center" >
-              <font size="6" color="black">Puan</font>
-            </div>
-            <div class="col-12" style="text-align: center" href="home.html">
-                  <a href="content.html">Ana Sayfa</a>
-                  
-            </div>
+      <div class="col-12" style="text-align: center">
+        <a href="{% url 'profil_misafir' %}">Profil Bilgileri</a> <!--ogrenci-->
+      </div>
+      <div class="col-12 "style="text-align: center" >
+        <font size="6" color="black">Puan</font>
+      </div>
+      <div class="col-12" style="text-align: center">
+        <a href="{% url 'rezervation' %}">Rezervasyonlarım</a>
+      </div>
+      <div class="col-12" style="text-align: center">
+        <a href="{% url 'shopping' %}">Alışverişlerim</a>
+      </div>
+      <div class="col-12" style="text-align: center">
+            <a href="{% url 'content' %}">Ana Sayfa</a>
             
-            <br><br>
-            <br><br>
-            <br><br>
-            <br><br>
-            <br><br>
-            <div class="col-12" style="text-align: center">
-              <a href="home.html">Çıkış Yap</a>
-            
-            <div class="col-12" style="text-align: center">
-              <a href="communication.html">İletişim</a>
-            </div>    
-        </div>
+      </div>
+      
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <div class="col-12" style="text-align: center">
+        <a href="{% url 'home' %}">Çıkış Yap</a>
+      
+      <div class="col-12" style="text-align: center">
+        <a href="{% url 'communication' %}">İletişim</a>
+      
+    
+  
+    </div>    
+  </div>
+
+
         <table class="table table-hover table-striped" style="width: 65% ">
             <tr class="table-secondary">
                 <th>#</th>

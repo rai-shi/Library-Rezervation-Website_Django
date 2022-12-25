@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -35,13 +37,13 @@
   </head>
   <body>
       <div class="takvim"> 
-        <a href="hall.html"> 
-        <img src="takvim.jpg"  id="takvim" />
+        <a href="{% url 'hall' %}"> 
+        <img src="{% static 'websiteapp/img/takvim.jpg' %}"  id="takvim" />
         </a>
       </div>
       <div class="sepet">
-        <a href="shopping.html">
-        <img src="sepet.jpg"  id="sepet1" />
+        <a href="{% url 'shopping' %}">
+        <img src="{% static 'websiteapp/img/sepet.jpg' %}"  id="sepet1" />
         </a>
       </div>
         
@@ -59,16 +61,19 @@
             <br><br>
 
             <div class="col-12" style="text-align: center">
-              <a href="profil_ogrenci.html" href="profil_misafir.html">Profil Bilgileri</a>
-            </div>
-            <div class="col-12" style="text-align: center">
-              <a href="rezervation.html">Rezervasyonlarım</a>
+              <a href="{% url 'profil_misafir' %}">Profil Bilgileri</a> <!--ogrenci-->
             </div>
             <div class="col-12 "style="text-align: center" >
               <font size="6" color="black">Puan</font>
             </div>
-            <div class="col-12" style="text-align: center" href="home.html">
-                  <a href="content.html">Ana Sayfa</a>
+            <div class="col-12" style="text-align: center">
+              <a href="{% url 'rezervation' %}">Rezervasyonlarım</a>
+            </div>
+            <div class="col-12" style="text-align: center">
+              <a href="{% url 'shopping' %}">Alışverişlerim</a>
+            </div>
+            <div class="col-12" style="text-align: center">
+                  <a href="{% url 'content' %}">Ana Sayfa</a>
                   
             </div>
             
@@ -78,10 +83,10 @@
             <br><br>
             <br><br>
             <div class="col-12" style="text-align: center">
-              <a href="home.html">Çıkış Yap</a>
+              <a href="{% url 'home' %}">Çıkış Yap</a>
             
             <div class="col-12" style="text-align: center">
-              <a href="communication.html">İletişim</a>
+              <a href="{% url 'communication' %}">İletişim</a>
             
           
         

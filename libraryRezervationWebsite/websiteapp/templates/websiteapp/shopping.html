@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="tr">
   <head>
@@ -19,8 +21,8 @@
     @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
     
     .card{
-      height:100;
-      weight:200;
+      height:100px; /*px eklendim*/
+      weight:200px;
     }
     
   
@@ -29,41 +31,51 @@
   <body>
 
     
-     <div class="container mx-0">
-      <div class="row">
-         <div class="col-4 col-md-4">
-          <div class="col-md-9 "style="text-align:center" >
-            <font size="6" color="black">AD SOYAD</font>
-            </div>
-            <br><br>
-            <br><br>
-            <br><br>
-            <br><br>
-            <div class="col-md-9 " style="text-align:center">
-              <a href="profil_ogrenci.html" href="profil_misafir.html">Profil Bilgileri</a>
-              </div>
-              <div class="col-md-9 " style="text-align: center">
-                  <a href="rezervation.html">Rezervasyonlarım & Puanlarım</a>
-              </div>
-              <div class="col-md-9 " style="text-align: center" href="home.html">
-                  <a href="home.html">Ana Sayfa</a>
-                  
-              </div>
-              <br><br>
-              <br><br>
-              <br><br>
-              <br><br>
-              <br><br>
-                <div class="col-8" style="text-align:center">
-                <a href="home.html">Çıkış Yap</a>
-                </div>
-                <div class="col-8" style="text-align:center">
-                  <a href="communication.html">İletişim</a>
-                
-                </div>
+    <div class="row align-content-center "style= "height:800px; width:400px; solid #333;">
           
-              </div>
-         
+        
+        
+      <div class="col-12 "style="text-align: center" >
+        <font size="6" color="black">AD SOYAD</font>
+      </div>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+
+      <div class="col-12" style="text-align: center">
+        <a href="{% url 'profil_misafir' %}">Profil Bilgileri</a> <!--ogrenci-->
+      </div>
+      <div class="col-12 "style="text-align: center" >
+        <font size="6" color="black">Puan</font>
+      </div>
+      <div class="col-12" style="text-align: center">
+        <a href="{% url 'rezervation' %}">Rezervasyonlarım</a>
+      </div>
+      <div class="col-12" style="text-align: center">
+        <a href="{% url 'shopping' %}">Alışverişlerim</a>
+      </div>
+      <div class="col-12" style="text-align: center">
+            <a href="{% url 'content' %}">Ana Sayfa</a>
+            
+      </div>
+      
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <div class="col-12" style="text-align: center">
+        <a href="{% url 'home' %}">Çıkış Yap</a>
+      
+      <div class="col-12" style="text-align: center">
+        <a href="{% url 'communication' %}">İletişim</a>
+      
+    
+  
+    </div>    
+  </div>
+
               <div class="col-13 col-md-8">
                 <div class="row-8">
                   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -74,7 +86,7 @@
                             <!-- Icons -->
                             <ul class="navbar-nav d-flex flex-row me-1">
                                 <li class="nav-item me-3 me-lg-0">
-                                    <a class="nav-link text-dark" href="sepet.html"><i class="bi bi-cart4"></i></i></a>
+                                    <a class="nav-link text-dark" href="#"><i class="bi bi-cart4"></i></i></a> <!--sepet html-->
                                   </li>
                             </ul>
                         </div>
@@ -85,31 +97,31 @@
                 <div class="row">
                 <div class="card-deck">
                   <div class="card">
-                    <img src="anahtarlık.jpeg" class="card-img img-fluid" width="96" height="350" alt="">
+                    <img src="{% static 'websiteapp/img/anahtarlık.jpg' %}"class="card-img img-fluid" width="96" height="350" alt="">
                     <div class="card-body">
                       <h5 class="card-title">KTÜ AMBLEMLİ ANAHTARLIK</h5>
                         <li class="nav-item me-3 me-lg-0">
-                          <a class="nav-link text-dark" href="sepet.html"><i class="bi bi-cart4"></i></i></a>
+                          <a class="nav-link text-dark" href="#"><i class="bi bi-cart4"></i></i></a>
                           <label>1000 puan</label>
                         </li>
                     </div>
                   </div>
                   <div class="card">
-                    <img class="card-img-top" src="defter.jpeg" alt="Card image cap">
+                    <img class="card-img-top" src="{% static 'websiteapp/img/pidefterc4.jpg' %}" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">DEFTER</h5>
                           <li class="nav-item me-3 me-lg-0">
-                            <a class="nav-link text-dark" href="sepet.html"><i class="bi bi-cart4"></i></i></a>
+                            <a class="nav-link text-dark" href="#"><i class="bi bi-cart4"></i></i></a>
                             <label>2000 puan</label>
                           </li>
                     </div>
                   </div>
                   <div class="card">
-                    <img class="card-img-top" src="kalem.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="{% static 'websiteapp/img/kalem.jpg' %}"alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">KALEM</h5>
                         <li class="nav-item me-3 me-lg-0">
-                             <a class="nav-link text-dark" href="sepet.html"><i class="bi bi-cart4"></i></i></a>   
+                             <a class="nav-link text-dark" href="#"><i class="bi bi-cart4"></i></i></a>   
                              <label>1000 puan</label>
                          </li>
                     </div>
@@ -119,31 +131,31 @@
             <div class="row">
                     <div class="card-deck">
                       <div class="card">
-                        <img src="kupa.jpeg" class="card-img img-fluid" width="96" height="350" alt="">
+                        <img src="{% static 'websiteapp/img/kupa.jpg' %}" class="card-img img-fluid" width="96" height="350" alt="">
                         <div class="card-body">
                           <h5 class="card-title">KTÜ AMBLEMLİ KUPA</h5>
                           <li class="nav-item me-3 me-lg-0">
-                                        <a class="nav-link text-dark" href="sepet.html"><i class="bi bi-cart4 bi-2x"></i></i></a>
+                                        <a class="nav-link text-dark" href="#"><i class="bi bi-cart4 bi-2x"></i></i></a>
                                         <label>2000 puan</label>
                                       </li>
                         </div>
                       </div>
                       <div class="card">
-                        <img class="card-img-top" src="termos.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="{% static 'websiteapp/img/termos.jpg' %}" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">TERMOS</h5>
                             <li class="nav-item me-3 me-lg-0">
-                                        <a class="nav-link text-dark" href="sepet.html"><i class="bi bi-cart4"></i></i></a>
+                                        <a class="nav-link text-dark" href="#"><i class="bi bi-cart4"></i></i></a>
                                       <label>5500 puan</label>
                                       </li>
                         </div>
                       </div>
                       <div class="card">
-                        <img class="card-img-top" src="tişört.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="{% static 'websiteapp/img/tişört.jpg' %}" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">TİŞÖRT</h5>
                             <li class="nav-item me-3 me-lg-0">
-                                        <a class="nav-link text-dark" href="sepet.html"><i class="bi bi-cart4"></i></i></a>
+                                        <a class="nav-link text-dark" href="#"><i class="bi bi-cart4"></i></i></a>
                                         <label>4000 puan</label>
                                       </li>
                         </div>

@@ -215,7 +215,7 @@ class Urun(models.Model):
     urunismi = models.CharField(db_column='urunIsmi', max_length=45)  # Field name made lowercase.
     urunpuan = models.IntegerField(db_column='urunPuan', blank=True, null=True)  # Field name made lowercase.
     stok = models.IntegerField(blank=True, null=True)
-    urunfotograf = models.TextField(db_column='urunFotograf', blank=True, null=True)  # Field name made lowercase.
+    urunfotografadi = models.CharField(db_column='urunFotografadi', max_length=50, blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
         managed = False
