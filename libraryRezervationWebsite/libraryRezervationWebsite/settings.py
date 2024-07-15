@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'libraryRezervationWebsite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'kutuphanedb',
+        'NAME': 'kutuphane_rezervasyon',
         'USER': 'root',
-        'PASSWORD': '930615+Fly',
+        'PASSWORD': 'Easm2934!',
         'HOST': 'localhost',
         'PORT': '3306',
     }
