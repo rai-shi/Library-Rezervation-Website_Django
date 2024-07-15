@@ -13,7 +13,6 @@ def openLibExitState(canvas_list:list):
     canvas_list[0].place_forget()
     canvas_list[2].place(relx=.5, rely=.5,anchor= CENTER)
 
-
 def openLibTakeBreakState(canvas_list:list):
     canvas_list[0].place_forget()
     canvas_list[3].place(relx=.5, rely=.5,anchor= CENTER)
@@ -21,6 +20,9 @@ def openLibTakeBreakState(canvas_list:list):
 def openLibReturnBreakState(canvas_list:list):
     canvas_list[0].place_forget()
     canvas_list[4].place(relx=.5, rely=.5,anchor= CENTER)
+
+
+
 
 
 
@@ -54,4 +56,27 @@ def lib_TakeBreak():
 
 
 def lib_ReturnBreak():
+    pass
+
+
+def dbConnection(canvas_list:list):
+    canvas_list[0].place_forget()
+    canvas_list[5].place(relx=.5, rely=.5,anchor= CENTER)
+
+def dbConnection_ReturnHomePage(canvas_list:list):
+    canvas_list[0].place(relx=.5, rely=.5,anchor= CENTER)
+    canvas_list[5].place_forget()
+
+
+
+def dbDisconnection():
+    pass
+
+
+
+def ListUsers():
+    pass
+   
+def ListRezervations():
+
     pass

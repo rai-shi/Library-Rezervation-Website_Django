@@ -1,13 +1,12 @@
 {% load static %}
-
 <!doctype html>
 <html lang="tr">
   <head>
-      
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SHOPPING</title>
+    <title>ALİSVERİS</title>
     <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -19,109 +18,113 @@
       background-color:#003963;
     }
     @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
-    
-    .card{
-      height:100px; /*px eklendim*/
-      weight:200px;
+
+    a {
+        font-size: 30px;
+        color: black;
     }
-    
-  
+    .card{
+      height:100;
+      weight:200;
+    }
+
+
   </style>
   </head>
   <body>
 
-    
-    <div class="row align-content-center "style= "height:800px; width:400px; solid #333;">
+
+     <div class="container mx-0">
+      <div class="row">
+         <div class="col-4 col-md-4">
+          <div class="col-md-9 "style="text-align:center" >
+            <div class="col-12 "style="text-align: center" >
+              <font size="6" color="black">AD SOYAD</font>
+            </div>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+
+            <div class="col-12" style="text-align: center">
+              <a href="{% url 'profil_misafir' %}">Profil Bilgileri</a> <!--ogrenci-->
+            </div>
+            <div class="col-12 "style="text-align: center" >
+              <font size="6" color="black">Puan</font>
+            </div>
+            <div class="col-12" style="text-align: center">
+              <a href="{% url 'rezervation' %}">Rezervasyonlarım</a>
+            </div>
+            <div class="col-12" style="text-align: center">
+              <a href="#">Alışverişlerim</a>
+            </div>
+            <div class="col-12" style="text-align: center">
+                  <a href="{% url 'content' %}">Ana Sayfa</a>
+                  
+            </div>
+            
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <div class="col-12" style="text-align: center">
+              <a href="{% url 'home' %}">Çıkış Yap</a>
+            
+            <div class="col-12" style="text-align: center">
+              <a href="{% url 'communication' %}">İletişim</a>
+            
           
         
-        
-      <div class="col-12 "style="text-align: center" >
-        <font size="6" color="black">AD SOYAD</font>
-      </div>
-      <br><br>
-      <br><br>
-      <br><br>
-      <br><br>
-
-      <div class="col-12" style="text-align: center">
-        <a href="{% url 'profil_misafir' %}">Profil Bilgileri</a> <!--ogrenci-->
-      </div>
-      <div class="col-12 "style="text-align: center" >
-        <font size="6" color="black">Puan</font>
-      </div>
-      <div class="col-12" style="text-align: center">
-        <a href="{% url 'rezervation' %}">Rezervasyonlarım</a>
-      </div>
-      <div class="col-12" style="text-align: center">
-        <a href="{% url 'shopping' %}">Alışverişlerim</a>
-      </div>
-      <div class="col-12" style="text-align: center">
-            <a href="{% url 'content' %}">Ana Sayfa</a>
-            
-      </div>
-      
-      <br><br>
-      <br><br>
-      <br><br>
-      <br><br>
-      <br><br>
-      <div class="col-12" style="text-align: center">
-        <a href="{% url 'home' %}">Çıkış Yap</a>
-      
-      <div class="col-12" style="text-align: center">
-        <a href="{% url 'communication' %}">İletişim</a>
-      
-    
-  
-    </div>    
-  </div>
+          </div>    
+        </div>
 
               <div class="col-13 col-md-8">
                 <div class="row-8">
                   <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <!-- Container wrapper -->
-                    
+
                         <!-- Collapsible wrapper -->
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <!-- Icons -->
                             <ul class="navbar-nav d-flex flex-row me-1">
                                 <li class="nav-item me-3 me-lg-0">
-                                    <a class="nav-link text-dark" href="#"><i class="bi bi-cart4"></i></i></a> <!--sepet html-->
+                                    <a class="nav-link text-dark" href="sepet.html"><i class="bi bi-cart4"></i></i></a>
                                   </li>
                             </ul>
                         </div>
-                   
+
                     <!-- Container wrapper -->
                   </nav>
                 </div>
                 <div class="row">
                 <div class="card-deck">
                   <div class="card">
-                    <img src="{% static 'websiteapp/img/anahtarlık.jpg' %}"class="card-img img-fluid" width="96" height="350" alt="">
+                    <img src="{% static 'websiteapp/img/anahtarlık.jpeg' %}" class="card-img img-fluid" width="96" height="350" alt="">
                     <div class="card-body">
                       <h5 class="card-title">KTÜ AMBLEMLİ ANAHTARLIK</h5>
                         <li class="nav-item me-3 me-lg-0">
-                          <a class="nav-link text-dark" href="#"><i class="bi bi-cart4"></i></i></a>
+                          <a class="nav-link text-dark" href="sepet.html"><i class="bi bi-cart4"></i></i></a>
                           <label>1000 puan</label>
                         </li>
                     </div>
                   </div>
                   <div class="card">
-                    <img class="card-img-top" src="{% static 'websiteapp/img/pidefterc4.jpg' %}" alt="Card image cap">
+                    <img class="card-img-top" src="{% static 'websiteapp/img/defter.jpeg' %}" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">DEFTER</h5>
                           <li class="nav-item me-3 me-lg-0">
-                            <a class="nav-link text-dark" href="#"><i class="bi bi-cart4"></i></i></a>
+                            <a class="nav-link text-dark" href="sepet.html"><i class="bi bi-cart4"></i></i></a>
                             <label>2000 puan</label>
                           </li>
                     </div>
                   </div>
                   <div class="card">
-                    <img class="card-img-top" src="{% static 'websiteapp/img/kalem.jpg' %}"alt="Card image cap">
+                    <img class="card-img-top" src="{% static 'websiteapp/img/kalem.jpg' %}" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">KALEM</h5>
                         <li class="nav-item me-3 me-lg-0">
-                             <a class="nav-link text-dark" href="#"><i class="bi bi-cart4"></i></i></a>   
+                             <a class="nav-link text-dark" href="sepet.html"><i class="bi bi-cart4"></i></i></a>   
                              <label>1000 puan</label>
                          </li>
                     </div>
@@ -131,21 +134,21 @@
             <div class="row">
                     <div class="card-deck">
                       <div class="card">
-                        <img src="{% static 'websiteapp/img/kupa.jpg' %}" class="card-img img-fluid" width="96" height="350" alt="">
+                        <img src="{% static 'websiteapp/img/kupa.jpeg' %}" class="card-img img-fluid" width="96" height="350" alt="">
                         <div class="card-body">
-                          <h5 class="card-title">KTÜ AMBLEMLİ KUPA</h5>
+                          <h5 class="card-title">KTÜ AMBLEML KUPA</h5>
                           <li class="nav-item me-3 me-lg-0">
-                                        <a class="nav-link text-dark" href="#"><i class="bi bi-cart4 bi-2x"></i></i></a>
+                                        <a class="nav-link text-dark" href="sepet.html"><i class="bi bi-cart4"></i></i></a>
                                         <label>2000 puan</label>
                                       </li>
                         </div>
                       </div>
                       <div class="card">
-                        <img class="card-img-top" src="{% static 'websiteapp/img/termos.jpg' %}" alt="Card image cap">
+                        <img class="card-img-top" src="{% static 'websiteapp/img/termos.jpeg' %}" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">TERMOS</h5>
                             <li class="nav-item me-3 me-lg-0">
-                                        <a class="nav-link text-dark" href="#"><i class="bi bi-cart4"></i></i></a>
+                                        <a class="nav-link text-dark" href="sepet.html"><i class="bi bi-cart4"></i></i></a>
                                       <label>5500 puan</label>
                                       </li>
                         </div>
@@ -155,7 +158,7 @@
                         <div class="card-body">
                           <h5 class="card-title">TİŞÖRT</h5>
                             <li class="nav-item me-3 me-lg-0">
-                                        <a class="nav-link text-dark" href="#"><i class="bi bi-cart4"></i></i></a>
+                                        <a class="nav-link text-dark" href="sepet.html"><i class="bi bi-cart4"></i></i></a>
                                         <label>4000 puan</label>
                                       </li>
                         </div>
@@ -163,14 +166,14 @@
                   </div>
                 </div>
               </div>
-              
+
       </div>
      </div>
 
 
 
 
- 
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

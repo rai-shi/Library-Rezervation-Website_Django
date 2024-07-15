@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 from .models import AuthGroup, AuthGroupPermissions, AuthPermission, AuthUser, AuthUserGroups, AuthUserUserPermissions, DjangoAdminLog, DjangoContentType, DjangoMigrations, DjangoSession
 from .models import Kutuphane, Misafiruye, Ogrenciuye, Oneri, Rezervasyon, Siparis, Siparisurun, Urun  
-
+from .data import data
 # Create your views here.
 
 def home(request):
@@ -34,10 +34,16 @@ def profil_ogrenci(request):
     return render(request, "websiteapp/profil_ogrenci.html")
 
 def rezervation(request):
-    return render(request, "websiteapp/rezervation.html")
+    contexts = {
+        "rezervations": data 
+    }
+    return render(request, "websiteapp/rezervation.html", data)
 
 def shopping(request):
     return render(request, "websiteapp/shopping.html")
+
+def myshops(request):
+    return render(request, "websiteapp/myshops.html")
     
  
  
